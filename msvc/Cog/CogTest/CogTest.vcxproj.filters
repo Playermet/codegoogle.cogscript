@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Functional">
+      <UniqueIdentifier>{9cc1c02b-78cd-4b02-968a-5079399451dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Symbols">
+      <UniqueIdentifier>{90456407-9acf-4683-96b2-e00c9f352ad6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Verbs">
+      <UniqueIdentifier>{793362a8-8d8a-4d0b-8777-1210f784aed7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VirtualMachine">
+      <UniqueIdentifier>{1703cc32-73db-40ee-81a5-078c881ce661}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Error">
+      <UniqueIdentifier>{9fc0f811-1a73-46ec-be06-f7959ebbc359}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\src\cogtest\syntactic_test_fixture.h" />
+    <ClInclude Include="..\..\..\src\cogtest\semantic_test_fixture.h" />
+    <ClInclude Include="..\..\..\src\cogtest\codegen_test_fixture.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\cogtest\syntactic_test_fixture.cpp" />
+    <ClCompile Include="..\..\..\src\cogtest\semantic_test_fixture.cpp" />
+    <ClCompile Include="..\..\..\src\cogtest\codegen_test_fixture.cpp" />
+    <ClCompile Include="..\..\..\src\cogtest\f_syntactic_test.cpp">
+      <Filter>Functional</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cogtest\f_semantic_test.cpp">
+      <Filter>Functional</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cogtest\f_codegen_test.cpp">
+      <Filter>Functional</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cogtest\sym_table_test.cpp">
+      <Filter>Symbols</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cogtest\v_table_test.cpp">
+      <Filter>Verbs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cogtest\vm_value_test.cpp">
+      <Filter>VirtualMachine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cogtest\vm_codebufferwritestream_test.cpp">
+      <Filter>VirtualMachine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cogtest\vm_codebufferreadstream_test.cpp">
+      <Filter>VirtualMachine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cogtest\vm_codebuffer_test.cpp">
+      <Filter>VirtualMachine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cogtest\err_storedreport_test.cpp">
+      <Filter>Error</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cogtest\err_streamreport_test.cpp">
+      <Filter>Error</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

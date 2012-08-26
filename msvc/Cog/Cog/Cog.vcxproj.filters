@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="..\..\..\src\cog\cog_script.h" />
+    <ClInclude Include="..\..\..\src\cog\cog_messageid.h" />
+    <ClInclude Include="..\..\..\src\cog\cog_instance.h" />
+    <ClInclude Include="..\..\..\src\cog\cog_constants.h" />
+    <ClInclude Include="..\..\..\src\cog\ast_visitor.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cog\ast_factory.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cog\ast_node.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cog\ast_op.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cog\gra_parser.hpp">
+      <Filter>Grammar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cog\gra_context.h">
+      <Filter>Grammar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cog\ir_textprinter.h">
+      <Filter>IR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cog\ir_codeprinter.h">
+      <Filter>IR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cog\ir_printer.h">
+      <Filter>IR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cog\cog_stages.h">
+      <Filter>Stages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cog\s2_symbolfield_visitor.h">
+      <Filter>Stages\2 - Semantic Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cog\s2_code_visitor.h">
+      <Filter>Stages\2 - Semantic Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cog\s2_expression_visitor.h">
+      <Filter>Stages\2 - Semantic Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cog\s2_label_visitor.h">
+      <Filter>Stages\2 - Semantic Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cog\s2_lval_visitor.h">
+      <Filter>Stages\2 - Semantic Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cog\s2_symbol_visitor.h">
+      <Filter>Stages\2 - Semantic Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cog\s2_symbolext_visitor.h">
+      <Filter>Stages\2 - Semantic Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cog\s3_expression_visitor.h">
+      <Filter>Stages\3 - Constant Folding</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cog\s3_code_visitor.h">
+      <Filter>Stages\3 - Constant Folding</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cog\s4_nonval_expression_visitor.h">
+      <Filter>Stages\4 - Code Generation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cog\s4_code_visitor.h">
+      <Filter>Stages\4 - Code Generation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cog\s4_expression_visitor.h">
+      <Filter>Stages\4 - Code Generation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cog\s4_lval_expression_visitor.h">
+      <Filter>Stages\4 - Code Generation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cog\sym_exception.h">
+      <Filter>Symbols</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cog\sym_type.h">
+      <Filter>Symbols</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cog\sym_symbol.h">
+      <Filter>Symbols</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cog\sym_table.h">
+      <Filter>Symbols</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cog\v_exception.h">
+      <Filter>Verbs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cog\v_verbid.h">
+      <Filter>Verbs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cog\v_table.h">
+      <Filter>Verbs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cog\v_verb.h">
+      <Filter>Verbs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cog\v_verbbinder.h">
+      <Filter>Verbs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cog\vm_virtualmachine.h">
+      <Filter>VirtualMachine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cog\vm_codebuffer.h">
+      <Filter>VirtualMachine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cog\vm_codebufferreadstream.h">
+      <Filter>VirtualMachine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cog\vm_codebufferwritestream.h">
+      <Filter>VirtualMachine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cog\vm_exception.h">
+      <Filter>VirtualMachine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cog\vm_jumptable.h">
+      <Filter>VirtualMachine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cog\vm_opcode.h">
+      <Filter>VirtualMachine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cog\vm_type.h">
+      <Filter>VirtualMachine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cog\vm_value.h">
+      <Filter>VirtualMachine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cog\err_report.h">
+      <Filter>Error</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cog\err_storedreport.h">
+      <Filter>Error</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cog\err_streamreport.h">
+      <Filter>Error</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cog\err_code.h">
+      <Filter>Error</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cog\err_error.h">
+      <Filter>Error</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cog\err_level.h">
+      <Filter>Error</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cog\err_location.h">
+      <Filter>Error</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cog\gen_arena.h">
+      <Filter>Generics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cog\gen_vector.h">
+      <Filter>Generics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cog\err_helper.h">
+      <Filter>Error</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cog\cog_compiler.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\cog\cog_script.cpp" />
+    <ClCompile Include="..\..\..\src\cog\cog_instance.cpp" />
+    <ClCompile Include="..\..\..\src\cog\cog_constants.cpp" />
+    <ClCompile Include="..\..\..\src\cog\ast_factory.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cog\ast_node.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cog\ast_visitor.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cog\gra_lexer.cpp">
+      <Filter>Grammar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cog\gra_parser.cpp">
+      <Filter>Grammar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cog\gra_context.cpp">
+      <Filter>Grammar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cog\ir_codeprinter.cpp">
+      <Filter>IR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cog\ir_printer.cpp">
+      <Filter>IR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cog\ir_textprinter.cpp">
+      <Filter>IR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cog\s1_generate_ast.cpp">
+      <Filter>Stages\1 - Generate AST</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cog\s2_code_visitor.cpp">
+      <Filter>Stages\2 - Semantic Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cog\s2_expression_visitor.cpp">
+      <Filter>Stages\2 - Semantic Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cog\s2_label_visitor.cpp">
+      <Filter>Stages\2 - Semantic Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cog\s2_lval_visitor.cpp">
+      <Filter>Stages\2 - Semantic Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cog\s2_semantic_analysis.cpp">
+      <Filter>Stages\2 - Semantic Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cog\s2_symbol_visitor.cpp">
+      <Filter>Stages\2 - Semantic Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cog\s2_symbolext_visitor.cpp">
+      <Filter>Stages\2 - Semantic Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cog\s2_symbolfield_visitor.cpp">
+      <Filter>Stages\2 - Semantic Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cog\s3_code_visitor.cpp">
+      <Filter>Stages\3 - Constant Folding</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cog\s3_constantfolding.cpp">
+      <Filter>Stages\3 - Constant Folding</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cog\s3_expression_visitor.cpp">
+      <Filter>Stages\3 - Constant Folding</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cog\s4_code_visitor.cpp">
+      <Filter>Stages\4 - Code Generation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cog\s4_codegen.cpp">
+      <Filter>Stages\4 - Code Generation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cog\s4_expression_visitor.cpp">
+      <Filter>Stages\4 - Code Generation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cog\s4_lval_expression_visitor.cpp">
+      <Filter>Stages\4 - Code Generation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cog\s4_nonval_expression_visitor.cpp">
+      <Filter>Stages\4 - Code Generation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cog\sym_symbol.cpp">
+      <Filter>Symbols</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cog\sym_table.cpp">
+      <Filter>Symbols</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cog\v_table.cpp">
+      <Filter>Verbs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cog\v_verb.cpp">
+      <Filter>Verbs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cog\v_verbid.cpp">
+      <Filter>Verbs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cog\vm_codebuffer.cpp">
+      <Filter>VirtualMachine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cog\vm_codebufferreadstream.cpp">
+      <Filter>VirtualMachine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cog\vm_codebufferwritestream.cpp">
+      <Filter>VirtualMachine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cog\vm_jumptable.cpp">
+      <Filter>VirtualMachine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cog\vm_value.cpp">
+      <Filter>VirtualMachine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cog\vm_virtualmachine.cpp">
+      <Filter>VirtualMachine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cog\err_storedreport.cpp">
+      <Filter>Error</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cog\err_streamreport.cpp">
+      <Filter>Error</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cog\err_error.cpp">
+      <Filter>Error</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cog\err_level.cpp">
+      <Filter>Error</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cog\err_location.cpp">
+      <Filter>Error</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cog\err_helper.cpp">
+      <Filter>Error</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\cog\cog_compiler.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="AST">
+      <UniqueIdentifier>{3aac3e9c-98a9-4cf3-a869-1f71b5b0db95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Grammar">
+      <UniqueIdentifier>{9e3abb81-1e4f-417f-bbee-14bd71326320}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IR">
+      <UniqueIdentifier>{d6dfb1ea-4042-4333-9cd9-a28cac720425}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Stages">
+      <UniqueIdentifier>{f82ff7e1-75c0-4c29-8413-55529fd4b5b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Stages\1 - Generate AST">
+      <UniqueIdentifier>{9ef7ee5f-22b2-42a0-bd91-9f5f68c82b1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Stages\2 - Semantic Analysis">
+      <UniqueIdentifier>{9dd41348-7805-441b-9937-ce41d2526ba0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Stages\3 - Constant Folding">
+      <UniqueIdentifier>{8aa88dc9-d7d5-42c6-a37f-49d728cbae47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Stages\4 - Code Generation">
+      <UniqueIdentifier>{f31822dc-dac4-4865-a0b1-9e087b3f75f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Symbols">
+      <UniqueIdentifier>{de292828-44a6-4d38-b956-881667e7e9f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Verbs">
+      <UniqueIdentifier>{e3bacb12-2c20-4106-8aa0-a1887aae4a9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VirtualMachine">
+      <UniqueIdentifier>{6cce4736-7f53-4d9a-88c5-4c56a2e2ce78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Error">
+      <UniqueIdentifier>{16fc4697-4749-4f79-99b2-0991768f4e95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Generics">
+      <UniqueIdentifier>{738c26fd-f472-41de-a0ff-2c4a52804479}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\src\cog\gra_lexer.lex">
+      <Filter>Grammar</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\src\cog\gra_parser.y">
+      <Filter>Grammar</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

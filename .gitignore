@@ -1,0 +1,17 @@
+*.aps
+*.suo
+*.vcxproj.user
+*.sdf
+*.opensdf
+/msvc/Cog/Debug
+/msvc/Cog/Release
+/msvc/Cog/ipch
+/msvc/Cog/Cog/Debug
+/msvc/Cog/Cog/Release
+/msvc/Cog/CogTest/Debug
+/msvc/Cog/CogTest/Release
+/src/cog/gra_lexer.cpp
+/src/cog/gra_parser.cpp
+/src/cog/gra_parser.hpp
+/src/cog/gra_parser.output
+/src/cog/gra_lexer.h

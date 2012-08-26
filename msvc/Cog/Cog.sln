@@ -1,0 +1,118 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Cog", "Cog\Cog.vcxproj", "{4DB72D79-A3D1-41C8-873B-246E648E4BE9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CogTest", "CogTest\CogTest.vcxproj", "{6532A681-D551-4F76-83C3-3ABDC464D928}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4DB72D79-A3D1-41C8-873B-246E648E4BE9} = {4DB72D79-A3D1-41C8-873B-246E648E4BE9}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test Cases", "Test Cases", "{62087C06-D2B8-4365-B45E-7B7D1EAED9B6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Functional", "Functional", "{BA712C0F-911E-4CCF-BCD3-EAE3C58F0D15}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Codegen", "Codegen", "{56B89D4F-76B3-4819-B0BF-35AB62B0DB32}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\test\functional\codegen\arithmetic.cog = ..\..\test\functional\codegen\arithmetic.cog
+		..\..\test\functional\codegen\assignment.cog = ..\..\test\functional\codegen\assignment.cog
+		..\..\test\functional\codegen\bitwise.cog = ..\..\test\functional\codegen\bitwise.cog
+		..\..\test\functional\codegen\call.cog = ..\..\test\functional\codegen\call.cog
+		..\..\test\functional\codegen\defaults.cog = ..\..\test\functional\codegen\defaults.cog
+		..\..\test\functional\codegen\do.cog = ..\..\test\functional\codegen\do.cog
+		..\..\test\functional\codegen\empty.cog = ..\..\test\functional\codegen\empty.cog
+		..\..\test\functional\codegen\for.cog = ..\..\test\functional\codegen\for.cog
+		..\..\test\functional\codegen\if.cog = ..\..\test\functional\codegen\if.cog
+		..\..\test\functional\codegen\label.cog = ..\..\test\functional\codegen\label.cog
+		..\..\test\functional\codegen\logical_and.cog = ..\..\test\functional\codegen\logical_and.cog
+		..\..\test\functional\codegen\logical_not.cog = ..\..\test\functional\codegen\logical_not.cog
+		..\..\test\functional\codegen\logical_or.cog = ..\..\test\functional\codegen\logical_or.cog
+		..\..\test\functional\codegen\relation.cog = ..\..\test\functional\codegen\relation.cog
+		..\..\test\functional\codegen\return.cog = ..\..\test\functional\codegen\return.cog
+		..\..\test\functional\codegen\verb.cog = ..\..\test\functional\codegen\verb.cog
+		..\..\test\functional\codegen\verb_param_order.cog = ..\..\test\functional\codegen\verb_param_order.cog
+		..\..\test\functional\codegen\verb_return.cog = ..\..\test\functional\codegen\verb_return.cog
+		..\..\test\functional\codegen\while.cog = ..\..\test\functional\codegen\while.cog
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Semantic", "Semantic", "{91EA1449-C0F5-40ED-B46B-494A79A3A4B7}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\test\functional\semantic\sym_ext_invalid.cog = ..\..\test\functional\semantic\sym_ext_invalid.cog
+		..\..\test\functional\semantic\sym_ext_invalid_params.cog = ..\..\test\functional\semantic\sym_ext_invalid_params.cog
+		..\..\test\functional\semantic\sym_ext_passing.cog = ..\..\test\functional\semantic\sym_ext_passing.cog
+		..\..\test\functional\semantic\sym_ext_redefinition.cog = ..\..\test\functional\semantic\sym_ext_redefinition.cog
+		..\..\test\functional\semantic\sym_ext_valid_params.cog = ..\..\test\functional\semantic\sym_ext_valid_params.cog
+		..\..\test\functional\semantic\sym_redefinition.cog = ..\..\test\functional\semantic\sym_redefinition.cog
+		..\..\test\functional\semantic\sym_undefined.cog = ..\..\test\functional\semantic\sym_undefined.cog
+		..\..\test\functional\semantic\verb_invalid_overload.cog = ..\..\test\functional\semantic\verb_invalid_overload.cog
+		..\..\test\functional\semantic\verb_passing.cog = ..\..\test\functional\semantic\verb_passing.cog
+		..\..\test\functional\semantic\verb_undefined.cog = ..\..\test\functional\semantic\verb_undefined.cog
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Syntactic", "Syntactic", "{C8CF240C-3711-476E-864D-7C1399B030C5}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\test\functional\syntactic\array.cog = ..\..\test\functional\syntactic\array.cog
+		..\..\test\functional\syntactic\comment_hash_code.cog = ..\..\test\functional\syntactic\comment_hash_code.cog
+		..\..\test\functional\syntactic\comment_hash_symbol.cog = ..\..\test\functional\syntactic\comment_hash_symbol.cog
+		..\..\test\functional\syntactic\comment_slash_code.cog = ..\..\test\functional\syntactic\comment_slash_code.cog
+		..\..\test\functional\syntactic\comment_slash_symbol.cog = ..\..\test\functional\syntactic\comment_slash_symbol.cog
+		..\..\test\functional\syntactic\do.cog = ..\..\test\functional\syntactic\do.cog
+		..\..\test\functional\syntactic\empty.cog = ..\..\test\functional\syntactic\empty.cog
+		..\..\test\functional\syntactic\expr_ops.cog = ..\..\test\functional\syntactic\expr_ops.cog
+		..\..\test\functional\syntactic\for.cog = ..\..\test\functional\syntactic\for.cog
+		..\..\test\functional\syntactic\for_combined.cog = ..\..\test\functional\syntactic\for_combined.cog
+		..\..\test\functional\syntactic\for_expr.cog = ..\..\test\functional\syntactic\for_expr.cog
+		..\..\test\functional\syntactic\for_inc.cog = ..\..\test\functional\syntactic\for_inc.cog
+		..\..\test\functional\syntactic\for_itdecl.cog = ..\..\test\functional\syntactic\for_itdecl.cog
+		..\..\test\functional\syntactic\if.cog = ..\..\test\functional\syntactic\if.cog
+		..\..\test\functional\syntactic\ifelse.cog = ..\..\test\functional\syntactic\ifelse.cog
+		..\..\test\functional\syntactic\ifelseif.cog = ..\..\test\functional\syntactic\ifelseif.cog
+		..\..\test\functional\syntactic\ifelseif_ambiguous.cog = ..\..\test\functional\syntactic\ifelseif_ambiguous.cog
+		..\..\test\functional\syntactic\label_degen.cog = ..\..\test\functional\syntactic\label_degen.cog
+		..\..\test\functional\syntactic\label_multi.cog = ..\..\test\functional\syntactic\label_multi.cog
+		..\..\test\functional\syntactic\label_none.cog = ..\..\test\functional\syntactic\label_none.cog
+		..\..\test\functional\syntactic\label_one.cog = ..\..\test\functional\syntactic\label_one.cog
+		..\..\test\functional\syntactic\label_redefinition.cog = ..\..\test\functional\syntactic\label_redefinition.cog
+		..\..\test\functional\syntactic\literal_float.cog = ..\..\test\functional\syntactic\literal_float.cog
+		..\..\test\functional\syntactic\literal_int.cog = ..\..\test\functional\syntactic\literal_int.cog
+		..\..\test\functional\syntactic\literal_int_hex.cog = ..\..\test\functional\syntactic\literal_int_hex.cog
+		..\..\test\functional\syntactic\stmt_break.cog = ..\..\test\functional\syntactic\stmt_break.cog
+		..\..\test\functional\syntactic\stmt_call.cog = ..\..\test\functional\syntactic\stmt_call.cog
+		..\..\test\functional\syntactic\stmt_return.cog = ..\..\test\functional\syntactic\stmt_return.cog
+		..\..\test\functional\syntactic\stmt_stop.cog = ..\..\test\functional\syntactic\stmt_stop.cog
+		..\..\test\functional\syntactic\symbol_basic.cog = ..\..\test\functional\syntactic\symbol_basic.cog
+		..\..\test\functional\syntactic\symbol_empty.cog = ..\..\test\functional\syntactic\symbol_empty.cog
+		..\..\test\functional\syntactic\symbol_ext.cog = ..\..\test\functional\syntactic\symbol_ext.cog
+		..\..\test\functional\syntactic\symbol_filename.cog = ..\..\test\functional\syntactic\symbol_filename.cog
+		..\..\test\functional\syntactic\symbol_flex.cog = ..\..\test\functional\syntactic\symbol_flex.cog
+		..\..\test\functional\syntactic\symbol_hexint.cog = ..\..\test\functional\syntactic\symbol_hexint.cog
+		..\..\test\functional\syntactic\symbol_int.cog = ..\..\test\functional\syntactic\symbol_int.cog
+		..\..\test\functional\syntactic\symbol_template.cog = ..\..\test\functional\syntactic\symbol_template.cog
+		..\..\test\functional\syntactic\while.cog = ..\..\test\functional\syntactic\while.cog
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4DB72D79-A3D1-41C8-873B-246E648E4BE9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4DB72D79-A3D1-41C8-873B-246E648E4BE9}.Debug|Win32.Build.0 = Debug|Win32
+		{4DB72D79-A3D1-41C8-873B-246E648E4BE9}.Release|Win32.ActiveCfg = Release|Win32
+		{4DB72D79-A3D1-41C8-873B-246E648E4BE9}.Release|Win32.Build.0 = Release|Win32
+		{6532A681-D551-4F76-83C3-3ABDC464D928}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6532A681-D551-4F76-83C3-3ABDC464D928}.Debug|Win32.Build.0 = Debug|Win32
+		{6532A681-D551-4F76-83C3-3ABDC464D928}.Release|Win32.ActiveCfg = Release|Win32
+		{6532A681-D551-4F76-83C3-3ABDC464D928}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BA712C0F-911E-4CCF-BCD3-EAE3C58F0D15} = {62087C06-D2B8-4365-B45E-7B7D1EAED9B6}
+		{56B89D4F-76B3-4819-B0BF-35AB62B0DB32} = {BA712C0F-911E-4CCF-BCD3-EAE3C58F0D15}
+		{91EA1449-C0F5-40ED-B46B-494A79A3A4B7} = {BA712C0F-911E-4CCF-BCD3-EAE3C58F0D15}
+		{C8CF240C-3711-476E-864D-7C1399B030C5} = {BA712C0F-911E-4CCF-BCD3-EAE3C58F0D15}
+	EndGlobalSection
+EndGlobal

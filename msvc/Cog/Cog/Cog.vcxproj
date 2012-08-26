@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\src\cog\ast_factory.h" />
+    <ClInclude Include="..\..\..\src\cog\ast_node.h" />
+    <ClInclude Include="..\..\..\src\cog\ast_op.h" />
+    <ClInclude Include="..\..\..\src\cog\ast_visitor.h" />
+    <ClInclude Include="..\..\..\src\cog\cog_compiler.h" />
+    <ClInclude Include="..\..\..\src\cog\cog_constants.h" />
+    <ClInclude Include="..\..\..\src\cog\err_helper.h" />
+    <ClInclude Include="..\..\..\src\cog\cog_instance.h" />
+    <ClInclude Include="..\..\..\src\cog\cog_messageid.h" />
+    <ClInclude Include="..\..\..\src\cog\cog_script.h" />
+    <ClInclude Include="..\..\..\src\cog\cog_stages.h" />
+    <ClInclude Include="..\..\..\src\cog\err_code.h" />
+    <ClInclude Include="..\..\..\src\cog\err_error.h" />
+    <ClInclude Include="..\..\..\src\cog\err_level.h" />
+    <ClInclude Include="..\..\..\src\cog\err_location.h" />
+    <ClInclude Include="..\..\..\src\cog\err_report.h" />
+    <ClInclude Include="..\..\..\src\cog\err_storedreport.h" />
+    <ClInclude Include="..\..\..\src\cog\err_streamreport.h" />
+    <ClInclude Include="..\..\..\src\cog\gen_arena.h" />
+    <ClInclude Include="..\..\..\src\cog\gra_context.h" />
+    <ClInclude Include="..\..\..\src\cog\gra_parser.hpp" />
+    <ClInclude Include="..\..\..\src\cog\ir_codeprinter.h" />
+    <ClInclude Include="..\..\..\src\cog\ir_printer.h" />
+    <ClInclude Include="..\..\..\src\cog\ir_textprinter.h" />
+    <ClInclude Include="..\..\..\src\cog\gen_vector.h" />
+    <ClInclude Include="..\..\..\src\cog\s2_code_visitor.h" />
+    <ClInclude Include="..\..\..\src\cog\s2_expression_visitor.h" />
+    <ClInclude Include="..\..\..\src\cog\s2_label_visitor.h" />
+    <ClInclude Include="..\..\..\src\cog\s2_lval_visitor.h" />
+    <ClInclude Include="..\..\..\src\cog\s2_symbolext_visitor.h" />
+    <ClInclude Include="..\..\..\src\cog\s2_symbolfield_visitor.h" />
+    <ClInclude Include="..\..\..\src\cog\s2_symbol_visitor.h" />
+    <ClInclude Include="..\..\..\src\cog\s3_code_visitor.h" />
+    <ClInclude Include="..\..\..\src\cog\s3_expression_visitor.h" />
+    <ClInclude Include="..\..\..\src\cog\s4_code_visitor.h" />
+    <ClInclude Include="..\..\..\src\cog\s4_expression_visitor.h" />
+    <ClInclude Include="..\..\..\src\cog\s4_lval_expression_visitor.h" />
+    <ClInclude Include="..\..\..\src\cog\s4_nonval_expression_visitor.h" />
+    <ClInclude Include="..\..\..\src\cog\sym_exception.h" />
+    <ClInclude Include="..\..\..\src\cog\sym_symbol.h" />
+    <ClInclude Include="..\..\..\src\cog\sym_table.h" />
+    <ClInclude Include="..\..\..\src\cog\sym_type.h" />
+    <ClInclude Include="..\..\..\src\cog\vm_codebuffer.h" />
+    <ClInclude Include="..\..\..\src\cog\vm_codebufferreadstream.h" />
+    <ClInclude Include="..\..\..\src\cog\vm_codebufferwritestream.h" />
+    <ClInclude Include="..\..\..\src\cog\vm_exception.h" />
+    <ClInclude Include="..\..\..\src\cog\vm_jumptable.h" />
+    <ClInclude Include="..\..\..\src\cog\vm_opcode.h" />
+    <ClInclude Include="..\..\..\src\cog\vm_type.h" />
+    <ClInclude Include="..\..\..\src\cog\vm_value.h" />
+    <ClInclude Include="..\..\..\src\cog\vm_virtualmachine.h" />
+    <ClInclude Include="..\..\..\src\cog\v_exception.h" />
+    <ClInclude Include="..\..\..\src\cog\v_table.h" />
+    <ClInclude Include="..\..\..\src\cog\v_verb.h" />
+    <ClInclude Include="..\..\..\src\cog\v_verbbinder.h" />
+    <ClInclude Include="..\..\..\src\cog\v_verbid.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\cog\ast_factory.cpp" />
+    <ClCompile Include="..\..\..\src\cog\ast_node.cpp" />
+    <ClCompile Include="..\..\..\src\cog\ast_visitor.cpp" />
+    <ClCompile Include="..\..\..\src\cog\cog_compiler.cpp" />
+    <ClCompile Include="..\..\..\src\cog\cog_constants.cpp" />
+    <ClCompile Include="..\..\..\src\cog\err_helper.cpp" />
+    <ClCompile Include="..\..\..\src\cog\cog_instance.cpp" />
+    <ClCompile Include="..\..\..\src\cog\cog_script.cpp" />
+    <ClCompile Include="..\..\..\src\cog\err_error.cpp" />
+    <ClCompile Include="..\..\..\src\cog\err_level.cpp" />
+    <ClCompile Include="..\..\..\src\cog\err_location.cpp" />
+    <ClCompile Include="..\..\..\src\cog\err_storedreport.cpp" />
+    <ClCompile Include="..\..\..\src\cog\err_streamreport.cpp" />
+    <ClCompile Include="..\..\..\src\cog\gra_context.cpp" />
+    <ClCompile Include="..\..\..\src\cog\gra_lexer.cpp" />
+    <ClCompile Include="..\..\..\src\cog\gra_parser.cpp" />
+    <ClCompile Include="..\..\..\src\cog\ir_codeprinter.cpp" />
+    <ClCompile Include="..\..\..\src\cog\ir_printer.cpp" />
+    <ClCompile Include="..\..\..\src\cog\ir_textprinter.cpp" />
+    <ClCompile Include="..\..\..\src\cog\s1_generate_ast.cpp" />
+    <ClCompile Include="..\..\..\src\cog\s2_code_visitor.cpp" />
+    <ClCompile Include="..\..\..\src\cog\s2_expression_visitor.cpp" />
+    <ClCompile Include="..\..\..\src\cog\s2_label_visitor.cpp" />
+    <ClCompile Include="..\..\..\src\cog\s2_lval_visitor.cpp" />
+    <ClCompile Include="..\..\..\src\cog\s2_semantic_analysis.cpp" />
+    <ClCompile Include="..\..\..\src\cog\s2_symbolext_visitor.cpp" />
+    <ClCompile Include="..\..\..\src\cog\s2_symbolfield_visitor.cpp" />
+    <ClCompile Include="..\..\..\src\cog\s2_symbol_visitor.cpp" />
+    <ClCompile Include="..\..\..\src\cog\s3_code_visitor.cpp" />
+    <ClCompile Include="..\..\..\src\cog\s3_constantfolding.cpp" />
+    <ClCompile Include="..\..\..\src\cog\s3_expression_visitor.cpp" />
+    <ClCompile Include="..\..\..\src\cog\s4_codegen.cpp" />
+    <ClCompile Include="..\..\..\src\cog\s4_code_visitor.cpp" />
+    <ClCompile Include="..\..\..\src\cog\s4_expression_visitor.cpp" />
+    <ClCompile Include="..\..\..\src\cog\s4_lval_expression_visitor.cpp" />
+    <ClCompile Include="..\..\..\src\cog\s4_nonval_expression_visitor.cpp" />
+    <ClCompile Include="..\..\..\src\cog\sym_symbol.cpp" />
+    <ClCompile Include="..\..\..\src\cog\sym_table.cpp" />
+    <ClCompile Include="..\..\..\src\cog\vm_codebuffer.cpp" />
+    <ClCompile Include="..\..\..\src\cog\vm_codebufferreadstream.cpp" />
+    <ClCompile Include="..\..\..\src\cog\vm_codebufferwritestream.cpp" />
+    <ClCompile Include="..\..\..\src\cog\vm_jumptable.cpp" />
+    <ClCompile Include="..\..\..\src\cog\vm_value.cpp" />
+    <ClCompile Include="..\..\..\src\cog\vm_virtualmachine.cpp" />
+    <ClCompile Include="..\..\..\src\cog\v_table.cpp" />
+    <ClCompile Include="..\..\..\src\cog\v_verb.cpp" />
+    <ClCompile Include="..\..\..\src\cog\v_verbid.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\src\cog\gra_lexer.lex">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd /D "$(SolutionDir)\..\..\src\cog"
+flex.exe -s -ogra_lexer.cpp -Pgra_lexer -Cem gra_lexer.lex</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">gra_lexer.cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd /D "$(SolutionDir)\..\..\src\cog"
+flex.exe -s -ogra_lexer.cpp -Pgra_lexer -Cem gra_lexer.lex</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">gra_lexer.cpp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating tokenizer</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating tokenizer</Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\src\cog\gra_parser.y">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd /D "$(SolutionDir)\..\..\src\cog"
+bison.exe -d -v -b gra_ -o gra_parser.cpp -p gra_parser gra_parser.y</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">gra_parser.cpp;gra_parser.hpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd /D "$(SolutionDir)\..\..\src\cog"
+bison.exe -d -v -b gra_ -o gra_parser.cpp -p gra_parser gra_parser.y</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">gra_parser.cpp;gra_parser.hpp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating parser</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating parser</Message>
+    </CustomBuild>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4DB72D79-A3D1-41C8-873B-246E648E4BE9}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Cog</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>YY_NO_UNISTD_H;WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>YY_NO_UNISTD_H;WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

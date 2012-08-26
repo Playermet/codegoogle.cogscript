@@ -1,0 +1,159 @@
+#include "s4_expression_visitor.h"
+#include "s4_lval_expression_visitor.h"
+#include "s4_nonval_expression_visitor.h"
+
+using namespace Cog::AST;
+using Cog::Stages::Stage4::ExpressionVisitor;
+
+ExpressionVisitor::ExpressionVisitor(Cog::IR::Printer& printer, Cog::Error::Report& report)
+	: AST::Visitor("Stage5::ExpressionVisitor", report), Printer(printer)
+{
+	return;
+}
+
+void ExpressionVisitor::VisitIdentifierExpression(IdentifierExpression& e)
+{
+	Printer.Load(e.Identifier);
+}
+
+void ExpressionVisitor::VisitSubscriptExpression(SubscriptExpression& e)
+{
+	e.Index->Accept(*this);
+	Printer.LoadI(e.Base);
+}
+
+void ExpressionVisitor::VisitMethodCallExpression(MethodCallExpression& e)
+{
+	for(auto it = e.Arguments->begin(); it != e.Arguments->end(); ++it)
+	{
+		(*it)->Accept(*this);
+	}
+
+	Printer.CallV(e.Base);
+}
+
+void ExpressionVisitor::VisitUnaryExpression(UnaryExpression& e)
+{
+	e.Base->Accept(*this);
+	
+	switch(e.Operator)
+	{
+	case UnaryOperator::Plus:
+		break;
+
+	case UnaryOperator::Minus:
+		Printer.Neg();
+		break;
+
+	case UnaryOperator::Not:
+		Printer.LNot();
+		break;
+	}
+}
+
+void ExpressionVisitor::VisitInfixExpression(InfixExpression& e)
+{
+	e.Left->Accept(*this);
+	e.Right->Accept(*this);
+
+	switch(e.Operator)
+	{
+	case InfixOperator::Addition:
+		Printer.Add();
+		break;
+
+	case InfixOperator::Subtraction:
+		Printer.Sub();
+		break;
+
+	case InfixOperator::Multiplication:
+		Printer.Mul();
+		break;
+
+	case InfixOperator::Division:
+		Printer.Div();
+		break;
+
+	case InfixOperator::Modulo:
+		Printer.Mod();
+		break;
+
+	case InfixOperator::Greater:
+		Printer.CGt();
+		break;
+
+	case InfixOperator::GreaterEqual:
+		Printer.CGeq();
+		break;
+
+	case InfixOperator::Less:
+		Printer.CLt();
+		break;
+
+	case InfixOperator::LessEqual:
+		Printer.CLeq();
+		break;
+
+	case InfixOperator::Equal:
+		Printer.CEq();
+		break;
+
+	case InfixOperator::NotEqual:
+		Printer.CNeq();
+		break;
+
+	case InfixOperator::And:
+		Printer.And();
+		break;
+
+	case InfixOperator::Or:
+		Printer.Or();
+		break;
+
+	case InfixOperator::Xor:
+		Printer.Xor();
+		break;
+
+	case InfixOperator::LogicalAnd:
+		Printer.LAnd();
+		break;
+
+	case InfixOperator::LogicalOr:
+		Printer.LOr();
+		break;
+	}
+}
+
+void ExpressionVisitor::VisitAssignmentExpression(AssignmentExpression& e)
+{
+	e.Value->Accept(*this);
+
+	// Copy to preserve value on stack after assignment
+	Printer.Copy();
+
+	LValueExpressionVisitor v(Printer, ErrorReport);
+	e.Target->Accept(v);
+}
+
+void ExpressionVisitor::VisitCommaExpression(CommaExpression& e)
+{
+	NonValuedExpressionVisitor v(Printer, ErrorReport);
+	e.Left->Accept(v);
+	e.Right->Accept(*this);
+}
+
+void ExpressionVisitor::VisitForOptionalExpression(ForOptionalExpression& e)
+{
+	// For optional expression always has value of 'true'
+	Printer.Const(true);
+}
+
+void ExpressionVisitor::VisitForExpression(ForExpression& e)
+{
+	e.Condition->Accept(*this);
+}
+
+void ExpressionVisitor::VisitConstantValueExpression(ConstantValueExpression& e)
+{
+	Printer.Const(e.Value);
+}
